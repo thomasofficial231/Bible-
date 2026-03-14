@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bible Mood Verses</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Glowing background orbs -->
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+  <div class="orb orb-3" aria-hidden="true"></div>
+  <div class="orb orb-4" aria-hidden="true"></div>
+
+  <!-- ══════════════ HEADER ══════════════ -->
+  <header class="site-header">
+    <div class="header-cross" aria-hidden="true">✝</div>
+    <h1 class="site-title">Bible Mood Verses</h1>
+    <p class="site-subtitle">Let Scripture speak to your heart</p>
+  </header>
+
+  <!-- ══════════════ MAIN ══════════════ -->
+  <main class="main-container">
+
+    <!-- ── Mood Selector Screen ── -->
+    <section id="mood-screen" class="screen active">
+
+      <p class="prompt-label">How are you feeling today?</p>
+
+      <div class="mood-list">
+
+        <button class="mood-btn" data-mood="sad" style="--btn-from:#6a3fa0;--btn-to:#c2185b;--glow:#e040fb;">
+          <span class="mood-icon">🕊️</span>
+          <span class="mood-text">
+            <span class="mood-name">Sad</span>
+            <span class="mood-hint">Find comfort in His love</span>
+          </span>
+          <span class="mood-arrow">›</span>
+        </button>
+
+        <button class="mood-btn" data-mood="anxious" style="--btn-from:#1565c0;--btn-to:#ad1457;--glow:#f48fb1;">
+          <span class="mood-icon">🌿</span>
+          <span class="mood-text">
+            <span class="mood-name">Anxious / Worried</span>
+            <span class="mood-hint">Cast your cares on Him</span>
+          </span>
+          <span class="mood-arrow">›</span>
+        </button>
+
+        <button class="mood-btn" data-mood="fear" style="--btn-from:#0d47a1;--btn-to:#880e4f;--glow:#f06292;">
+          <span class="mood-icon">🛡️</span>
+          <span class="mood-text">
+            <span class="mood-name">Afraid</span>
+            <span class="mood-hint">He is your refuge and strength</span>
+          </span>
+          <span class="mood-arrow">›</span>
+        </button>
+
+        <button class="mood-btn" data-mood="lonely" style="--btn-from:#4a148c;--btn-to:#c62828;--glow:#ce93d8;">
+          <span class="mood-icon">🤍</span>
+          <span class="mood-text">
+            <span class="mood-name">Lonely</span>
+            <span class="mood-hint">He will never leave you</span>
+          </span>
+          <span class="mood-arrow">›</span>
+        </button>
+
+        <button class="mood-btn" data-mood="strength" style="--btn-from:#1a237e;--btn-to:#b71c1c;--glow:#ff80ab;">
+          <span class="mood-icon">⚡</span>
+          <span class="mood-text">
+            <span class="mood-name">Strength</span>
+            <span class="mood-hint">Be strong in the Lord</span>
+          </span>
+          <span class="mood-arrow">›</span>
+        </button>
+
+        <button class="mood-btn" data-mood="peace" style="--btn-from:#283593;--btn-to:#6a1b9a;--glow:#b39ddb;">
+          <span class="mood-icon">☁️</span>
+          <span class="mood-text">
+            <span class="mood-name">Peace</span>
+            <span class="mood-hint">The peace that surpasses all</span>
+          </span>
+          <span class="mood-arrow">›</span>
+        </button>
+
+        <button class="mood-btn" data-mood="thankful" style="--btn-from:#880e4f;--btn-to:#4527a0;--glow:#f48fb1;">
+          <span class="mood-icon">🙏</span>
+          <span class="mood-text">
+            <span class="mood-name">Thankful</span>
+            <span class="mood-hint">Give thanks in all things</span>
+          </span>
+          <span class="mood-arrow">›</span>
+        </button>
+
+      </div><!-- /.mood-list -->
+
+      <div class="random-wrap">
+        <button id="random-btn" class="random-btn">
+          <span class="random-star">✦</span>
+          <span>Random Verse</span>
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ── Verse Display Screen ── -->
+    <section id="verse-screen" class="screen">
+
+      <button id="back-btn" class="back-btn" aria-label="Back to moods">
+        ← Back
+      </button>
+
+      <p id="mood-label" class="current-mood-label"></p>
+
+      <div class="verse-card" id="verse-card">
+        <div class="card-shimmer" aria-hidden="true"></div>
+        <div class="verse-ornament" aria-hidden="true">"</div>
+        <blockquote id="verse-text" class="verse-text"></blockquote>
+        <cite id="verse-ref" class="verse-ref"></cite>
+
+        <div class="card-actions">
+          <button id="copy-btn" class="action-btn">
+            <span class="btn-icon">📋</span> Copy
+          </button>
+          <button id="share-btn" class="action-btn">
+            <span class="btn-icon">↗</span> Share
+          </button>
+        </div>
+      </div>
+
+      <button id="another-btn" class="another-btn">
+        Another Verse →
+      </button>
+
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    </section>
+
+  </main>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="site-footer">
+    <p>"Your word is a lamp for my feet, a light on my path." — Psalm 119:105</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

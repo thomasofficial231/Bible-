@@ -1,0 +1,710 @@
+/* ============================================================
+   STYLE.CSS — Bible Mood Verses
+   Rich Navy Blue × Vivid Pink Gradient Theme
+   Playfair Display (display) + DM Sans (body)
+   ============================================================ */
+
+/* ─────────────────────────────────────────────
+   1. DESIGN TOKENS
+───────────────────────────────────────────── */
+:root {
+  /* Navy palette */
+  --navy-900: #060d2e;
+  --navy-800: #0a1540;
+  --navy-700: #0e1f5c;
+  --navy-600: #142580;
+
+  /* Pink palette */
+  --pink-400: #f472b6;
+  --pink-500: #ec4899;
+  --pink-600: #db2777;
+  --pink-700: #be185d;
+
+  /* Gradient combos */
+  --bg-gradient:   linear-gradient(145deg, #060d2e 0%, #100828 35%, #1a0d40 65%, #0a1535 100%);
+  --hero-gradient: linear-gradient(135deg, #0e1f5c 0%, #2d0f5e 50%, #5c0f3e 100%);
+  --pink-gradient: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+  --btn-glow-gradient: linear-gradient(135deg, var(--btn-from), var(--btn-to));
+
+  /* Glass surface */
+  --glass:         rgba(255, 255, 255, 0.06);
+  --glass-hover:   rgba(255, 255, 255, 0.11);
+  --glass-border:  rgba(255, 255, 255, 0.12);
+  --glass-strong:  rgba(255, 255, 255, 0.10);
+
+  /* Text */
+  --txt-primary:  #ffffff;
+  --txt-soft:     rgba(255,255,255,0.78);
+  --txt-muted:    rgba(255,255,255,0.45);
+  --txt-pink:     #f9a8d4;
+
+  /* Shadows */
+  --shadow-card:  0 20px 60px rgba(0,0,0,0.55), 0 4px 16px rgba(0,0,0,0.3);
+  --shadow-btn:   0 4px 20px rgba(0,0,0,0.4);
+
+  /* Fonts */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'DM Sans', system-ui, sans-serif;
+
+  /* Radii */
+  --r-btn:  18px;
+  --r-card: 28px;
+  --r-pill: 100px;
+}
+
+/* ─────────────────────────────────────────────
+   2. RESET & BASE
+───────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--txt-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ─────────────────────────────────────────────
+   3. BACKGROUND ORBS
+───────────────────────────────────────────── */
+.orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.orb-1 {
+  width: 520px; height: 520px;
+  background: radial-gradient(circle, rgba(190,24,93,0.30) 0%, transparent 70%);
+  top: -180px; right: -160px;
+  animation: orbDrift 14s ease-in-out infinite alternate;
+}
+
+.orb-2 {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(99,35,190,0.28) 0%, transparent 70%);
+  bottom: 5%; left: -140px;
+  animation: orbDrift 18s ease-in-out infinite alternate-reverse;
+}
+
+.orb-3 {
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(236,72,153,0.20) 0%, transparent 70%);
+  top: 42%; right: -80px;
+  animation: orbDrift 11s ease-in-out infinite alternate;
+}
+
+.orb-4 {
+  width: 260px; height: 260px;
+  background: radial-gradient(circle, rgba(20,37,128,0.45) 0%, transparent 70%);
+  top: 25%; left: 10%;
+  animation: orbDrift 16s ease-in-out 3s infinite alternate-reverse;
+}
+
+@keyframes orbDrift {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(30px, 40px) scale(1.08); }
+}
+
+/* ─────────────────────────────────────────────
+   4. HEADER
+───────────────────────────────────────────── */
+.site-header {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2.8rem 1.5rem 2rem;
+  background: linear-gradient(180deg, rgba(10,21,64,0.85) 0%, transparent 100%);
+  border-bottom: 1px solid rgba(236,72,153,0.18);
+}
+
+.header-cross {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  background: var(--pink-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 10px rgba(236,72,153,0.6));
+}
+
+.site-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 7vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  /* Pink-to-lavender gradient text */
+  background: linear-gradient(135deg, #f9a8d4 0%, #ec4899 40%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 20px rgba(236,72,153,0.4));
+}
+
+.site-subtitle {
+  margin-top: 0.5rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--txt-pink);
+  letter-spacing: 0.04em;
+  opacity: 0.85;
+}
+
+/* ─────────────────────────────────────────────
+   5. MAIN CONTAINER
+───────────────────────────────────────────── */
+.main-container {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1.1rem 3.5rem;
+}
+
+/* ─────────────────────────────────────────────
+   6. SCREEN SWITCHING
+───────────────────────────────────────────── */
+.screen { display: none; }
+.screen.active {
+  display: block;
+  animation: fadeSlide 0.45s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─────────────────────────────────────────────
+   7. MOOD SELECTOR — PROMPT LABEL
+───────────────────────────────────────────── */
+.prompt-label {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 4vw, 1.75rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--txt-soft);
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.02em;
+}
+
+/* ─────────────────────────────────────────────
+   8. MOOD LIST — VERTICAL RECTANGULAR BUTTONS
+───────────────────────────────────────────── */
+.mood-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 1.75rem;
+}
+
+.mood-btn {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 1.25rem 1rem 1.1rem;
+
+  /* Shape */
+  border-radius: var(--r-btn);
+  border: 1.5px solid transparent;
+
+  /* Gradient fill using per-button CSS variables */
+  background: linear-gradient(var(--glass), var(--glass)),
+              linear-gradient(135deg, var(--btn-from), var(--btn-to));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  /* Subtle translucent overlay on top of gradient */
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  /* Glow */
+  box-shadow:
+    0 0 0 1.5px rgba(255,255,255,0.08),
+    0 4px 22px rgba(0,0,0,0.35),
+    0 0 18px -4px var(--glow, #ec4899);
+
+  transition:
+    transform      0.22s cubic-bezier(0.34,1.56,0.64,1),
+    box-shadow     0.22s ease,
+    border-color   0.22s ease;
+
+  color: var(--txt-primary);
+  text-align: left;
+}
+
+/* Inner glow sweep on hover */
+.mood-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(120deg, rgba(255,255,255,0.14) 0%, transparent 55%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+/* Outer neon border glow */
+.mood-btn::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: calc(var(--r-btn) + 2px);
+  background: linear-gradient(135deg, var(--btn-from), var(--glow, #ec4899), var(--btn-to));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  filter: blur(4px);
+}
+
+.mood-btn:hover,
+.mood-btn:focus-visible {
+  transform: translateY(-3px) scale(1.015);
+  box-shadow:
+    0 0 0 2px rgba(255,255,255,0.15),
+    0 8px 32px rgba(0,0,0,0.45),
+    0 0 28px -2px var(--glow, #ec4899);
+  border-color: rgba(255,255,255,0.22);
+  outline: none;
+}
+
+.mood-btn:hover::before { opacity: 1; }
+.mood-btn:hover::after  { opacity: 0.7; }
+
+.mood-btn:active {
+  transform: translateY(0) scale(0.99);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+
+/* Icon */
+.mood-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.25));
+}
+
+/* Text block */
+.mood-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+  flex: 1;
+}
+
+.mood-name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  /* Gradient text — pink to white */
+  background: linear-gradient(90deg, #ffffff 0%, var(--pink-400) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.mood-hint {
+  font-size: 0.73rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.52);
+  letter-spacing: 0.03em;
+  font-style: italic;
+}
+
+/* Chevron */
+.mood-arrow {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgba(255,255,255,0.4);
+  line-height: 1;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.mood-btn:hover .mood-arrow {
+  transform: translateX(4px);
+  color: var(--pink-400);
+}
+
+/* ─────────────────────────────────────────────
+   9. RANDOM VERSE BUTTON
+───────────────────────────────────────────── */
+.random-wrap {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.random-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.85rem 2.5rem;
+  border-radius: var(--r-pill);
+  border: 2px solid transparent;
+
+  /* Pink gradient border trick */
+  background:
+    linear-gradient(var(--navy-900), var(--navy-900)) padding-box,
+    var(--pink-gradient) border-box;
+
+  color: var(--pink-400);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  box-shadow:
+    0 0 20px -4px rgba(236,72,153,0.45),
+    0 4px 16px rgba(0,0,0,0.3);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.random-star {
+  font-style: normal;
+  font-size: 0.9rem;
+}
+
+.random-btn:hover,
+.random-btn:focus-visible {
+  transform: scale(1.05);
+  color: #fff;
+  box-shadow:
+    0 0 32px -2px rgba(236,72,153,0.65),
+    0 6px 22px rgba(0,0,0,0.35);
+  outline: none;
+}
+
+.random-btn:hover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--pink-gradient);
+  opacity: 0.15;
+  border-radius: inherit;
+}
+
+/* ─────────────────────────────────────────────
+   10. VERSE SCREEN — BACK BUTTON
+───────────────────────────────────────────── */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 1rem;
+  border-radius: var(--r-pill);
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.05);
+  color: rgba(255,255,255,0.6);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  margin-bottom: 1.25rem;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.back-btn:hover, .back-btn:focus-visible {
+  background: rgba(255,255,255,0.10);
+  color: var(--txt-primary);
+  border-color: rgba(236,72,153,0.4);
+  outline: none;
+}
+
+/* ─────────────────────────────────────────────
+   11. MOOD LABEL (above verse card)
+───────────────────────────────────────────── */
+.current-mood-label {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+  background: var(--pink-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─────────────────────────────────────────────
+   12. VERSE CARD (glassmorphism)
+───────────────────────────────────────────── */
+.verse-card {
+  position: relative;
+  border-radius: var(--r-card);
+  border: 1px solid rgba(255,255,255,0.13);
+  background: linear-gradient(145deg,
+    rgba(255,255,255,0.10) 0%,
+    rgba(255,255,255,0.04) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 2.25rem 1.75rem 1.75rem;
+  overflow: hidden;
+
+  box-shadow:
+    var(--shadow-card),
+    0 0 40px -10px rgba(236,72,153,0.25),
+    inset 0 1px 0 rgba(255,255,255,0.14);
+
+  animation: cardReveal 0.55s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+/* Diagonal shimmer stripe */
+.card-shimmer {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(255,255,255,0.05) 50%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+/* Pink bottom edge glow */
+.verse-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 10%; right: 10%;
+  height: 2px;
+  background: var(--pink-gradient);
+  border-radius: 0 0 var(--r-card) var(--r-card);
+  opacity: 0.6;
+}
+
+@keyframes cardReveal {
+  from { opacity: 0; transform: scale(0.95) translateY(16px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Big decorative quote mark */
+.verse-ornament {
+  position: absolute;
+  top: -0.6rem;
+  left: 1.1rem;
+  font-family: var(--font-display);
+  font-size: 6rem;
+  line-height: 1;
+  font-style: italic;
+  background: var(--pink-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.25;
+  pointer-events: none;
+  user-select: none;
+}
+
+.verse-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 4.2vw, 1.65rem);
+  font-weight: 400;
+  line-height: 1.75;
+  color: #f0e6ff;
+  quotes: none;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1.4rem;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.3);
+}
+
+.verse-ref {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-style: normal;
+  text-align: right;
+  background: linear-gradient(90deg, #f9a8d4, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-top: 1px solid rgba(255,255,255,0.10);
+  padding-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+/* ─────────────────────────────────────────────
+   13. CARD ACTION BUTTONS (Copy / Share)
+───────────────────────────────────────────── */
+.card-actions {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: flex-end;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.52rem 1.2rem;
+  border-radius: var(--r-pill);
+  border: 1px solid rgba(236,72,153,0.35);
+  background: rgba(236,72,153,0.08);
+  color: var(--txt-pink);
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.18s, border-color 0.18s, color 0.18s, box-shadow 0.18s;
+}
+
+.action-btn:hover, .action-btn:focus-visible {
+  background: rgba(236,72,153,0.22);
+  border-color: rgba(236,72,153,0.7);
+  color: #fff;
+  box-shadow: 0 0 14px rgba(236,72,153,0.4);
+  outline: none;
+}
+
+.btn-icon { font-size: 0.88rem; }
+
+/* ─────────────────────────────────────────────
+   14. ANOTHER VERSE BUTTON
+───────────────────────────────────────────── */
+.another-btn {
+  display: block;
+  width: 100%;
+  margin-top: 1.2rem;
+  padding: 1.05rem;
+  border: none;
+  border-radius: var(--r-btn);
+  background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 55%, #3b82f6 100%);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  box-shadow:
+    0 0 24px -4px rgba(236,72,153,0.55),
+    0 6px 24px rgba(0,0,0,0.35);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.another-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255,255,255,0.18) 0%, transparent 60%);
+  border-radius: inherit;
+}
+
+.another-btn:hover, .another-btn:focus-visible {
+  transform: translateY(-3px);
+  filter: brightness(1.12);
+  box-shadow:
+    0 0 36px -2px rgba(236,72,153,0.65),
+    0 10px 30px rgba(0,0,0,0.4);
+  outline: none;
+}
+
+.another-btn:active { transform: translateY(0); }
+
+/* ─────────────────────────────────────────────
+   15. TOAST NOTIFICATION
+───────────────────────────────────────────── */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: linear-gradient(135deg, #1e1047, #3b0f6b);
+  border: 1px solid rgba(236,72,153,0.4);
+  color: var(--txt-pink);
+  padding: 0.65rem 1.6rem;
+  border-radius: var(--r-pill);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.28s ease, transform 0.28s ease;
+  z-index: 999;
+  white-space: nowrap;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4), 0 0 16px rgba(236,72,153,0.2);
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ─────────────────────────────────────────────
+   16. FOOTER
+───────────────────────────────────────────── */
+.site-footer {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 1.4rem 1rem 2rem;
+  border-top: 1px solid rgba(236,72,153,0.15);
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-style: italic;
+  color: rgba(249,168,212,0.5);
+  letter-spacing: 0.03em;
+}
+
+/* ─────────────────────────────────────────────
+   17. FOCUS & ACCESSIBILITY
+───────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid #ec4899;
+  outline-offset: 3px;
+}
+
+/* ─────────────────────────────────────────────
+   18. RESPONSIVE TWEAKS
+───────────────────────────────────────────── */
+@media (max-width: 380px) {
+  .site-title         { font-size: 1.75rem; }
+  .mood-name          { font-size: 0.95rem; }
+  .verse-card         { padding: 1.8rem 1.3rem 1.5rem; }
+  .card-actions       { flex-wrap: wrap; justify-content: center; }
+  .random-btn         { padding: 0.8rem 1.8rem; }
+}
+
+@media (min-width: 600px) {
+  .main-container     { padding: 2.5rem 2rem 4rem; }
+  .mood-btn           { padding: 1.15rem 1.5rem; }
+  .mood-icon          { font-size: 1.75rem; }
+  .mood-name          { font-size: 1.1rem; }
+  .verse-card         { padding: 2.5rem 2.2rem 2rem; }
+}

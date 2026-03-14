@@ -1,0 +1,131 @@
+[
+  // ============================================================
+  //  VERSES.JSON — Bible Mood Verses
+  //  To add more verses, copy one of the blocks below and paste
+  //  it inside the array. Make sure to end every block (except
+  //  the last one) with a comma.
+  //
+  //  Valid mood values:
+  //    "sad" | "anxious" | "fear" | "lonely" |
+  //    "strength" | "peace" | "thankful"
+  // ============================================================
+
+  // ---------- SAD (15 verses) ----------
+  { "mood": "sad", "verse": "The Lord is close to the brokenhearted and saves those who are crushed in spirit.", "reference": "Psalm 34:18" },
+  { "mood": "sad", "verse": "He heals the brokenhearted and binds up their wounds.", "reference": "Psalm 147:3" },
+  { "mood": "sad", "verse": "Weeping may stay for the night, but rejoicing comes in the morning.", "reference": "Psalm 30:5" },
+  { "mood": "sad", "verse": "Come to me, all you who are weary and burdened, and I will give you rest.", "reference": "Matthew 11:28" },
+  { "mood": "sad", "verse": "He will wipe every tear from their eyes. There will be no more death or mourning or crying or pain.", "reference": "Revelation 21:4" },
+  { "mood": "sad", "verse": "The Lord is my shepherd, I lack nothing. He makes me lie down in green pastures.", "reference": "Psalm 23:1-2" },
+  { "mood": "sad", "verse": "Why, my soul, are you downcast? Why so disturbed within me? Put your hope in God.", "reference": "Psalm 42:11" },
+  { "mood": "sad", "verse": "Cast your cares on the Lord and he will sustain you; he will never let the righteous be shaken.", "reference": "Psalm 55:22" },
+  { "mood": "sad", "verse": "Blessed are those who mourn, for they will be comforted.", "reference": "Matthew 5:4" },
+  { "mood": "sad", "verse": "The God of all comfort, who comforts us in all our troubles.", "reference": "2 Corinthians 1:3-4" },
+  { "mood": "sad", "verse": "You keep track of all my sorrows. You have collected all my tears in your bottle.", "reference": "Psalm 56:8" },
+  { "mood": "sad", "verse": "He gives strength to the weary and increases the power of the weak.", "reference": "Isaiah 40:29" },
+  { "mood": "sad", "verse": "For I am the Lord your God who takes hold of your right hand and says to you, Do not fear; I will help you.", "reference": "Isaiah 41:13" },
+  { "mood": "sad", "verse": "Jesus wept.", "reference": "John 11:35" },
+  { "mood": "sad", "verse": "The Lord your God is with you, the Mighty Warrior who saves. He will take great delight in you.", "reference": "Zephaniah 3:17" },
+
+  // ---------- ANXIOUS / WORRIED (15 verses) ----------
+  { "mood": "anxious", "verse": "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.", "reference": "Philippians 4:6" },
+  { "mood": "anxious", "verse": "Cast all your anxiety on him because he cares for you.", "reference": "1 Peter 5:7" },
+  { "mood": "anxious", "verse": "Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid.", "reference": "John 14:27" },
+  { "mood": "anxious", "verse": "Do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own.", "reference": "Matthew 6:34" },
+  { "mood": "anxious", "verse": "And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.", "reference": "Philippians 4:7" },
+  { "mood": "anxious", "verse": "When anxiety was great within me, your consolation brought me joy.", "reference": "Psalm 94:19" },
+  { "mood": "anxious", "verse": "Do not let your hearts be troubled. You believe in God; believe also in me.", "reference": "John 14:1" },
+  { "mood": "anxious", "verse": "Look at the birds of the air; they do not sow or reap or store away in barns, and yet your heavenly Father feeds them. Are you not much more valuable than they?", "reference": "Matthew 6:26" },
+  { "mood": "anxious", "verse": "The Lord himself goes before you and will be with you; he will never leave you nor forsake you. Do not be afraid; do not be discouraged.", "reference": "Deuteronomy 31:8" },
+  { "mood": "anxious", "verse": "Humble yourselves, therefore, under God's mighty hand, that he may lift you up in due time.", "reference": "1 Peter 5:6" },
+  { "mood": "anxious", "verse": "Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him.", "reference": "Proverbs 3:5-6" },
+  { "mood": "anxious", "verse": "My God will meet all your needs according to the riches of his glory in Christ Jesus.", "reference": "Philippians 4:19" },
+  { "mood": "anxious", "verse": "Which of you by being worried can add a single hour to his life?", "reference": "Matthew 6:27" },
+  { "mood": "anxious", "verse": "I sought the Lord, and he answered me; he delivered me from all my fears.", "reference": "Psalm 34:4" },
+  { "mood": "anxious", "verse": "For God has not given us a spirit of fear and timidity, but of power, love, and self-discipline.", "reference": "2 Timothy 1:7" },
+
+  // ---------- AFRAID (15 verses) ----------
+  { "mood": "fear", "verse": "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.", "reference": "Joshua 1:9" },
+  { "mood": "fear", "verse": "The Lord is my light and my salvation — whom shall I fear? The Lord is the stronghold of my life — of whom shall I be afraid?", "reference": "Psalm 27:1" },
+  { "mood": "fear", "verse": "When I am afraid, I put my trust in you.", "reference": "Psalm 56:3" },
+  { "mood": "fear", "verse": "God is our refuge and strength, an ever-present help in trouble. Therefore we will not fear.", "reference": "Psalm 46:1-2" },
+  { "mood": "fear", "verse": "Even though I walk through the darkest valley, I will fear no evil, for you are with me.", "reference": "Psalm 23:4" },
+  { "mood": "fear", "verse": "There is no fear in love. But perfect love drives out fear.", "reference": "1 John 4:18" },
+  { "mood": "fear", "verse": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you.", "reference": "Isaiah 41:10" },
+  { "mood": "fear", "verse": "The Lord is with me; I will not be afraid. What can mere mortals do to me?", "reference": "Psalm 118:6" },
+  { "mood": "fear", "verse": "For I am the Lord your God who takes hold of your right hand and says to you, Do not fear; I will help you.", "reference": "Isaiah 41:13" },
+  { "mood": "fear", "verse": "Have I not commanded you? Be strong and courageous. Do not be frightened; do not be dismayed.", "reference": "Joshua 1:9" },
+  { "mood": "fear", "verse": "For you did not receive a spirit that makes you a slave again to fear, but you received the Spirit of sonship.", "reference": "Romans 8:15" },
+  { "mood": "fear", "verse": "The Lord is my helper; I will not be afraid. What can mere mortals do to me?", "reference": "Hebrews 13:6" },
+  { "mood": "fear", "verse": "Say to those with fearful hearts, 'Be strong, do not fear; your God will come.'", "reference": "Isaiah 35:4" },
+  { "mood": "fear", "verse": "Do not be afraid of them, for I am with you and will rescue you, declares the Lord.", "reference": "Jeremiah 1:8" },
+  { "mood": "fear", "verse": "Peace I leave with you; my peace I give you. Do not let your hearts be troubled and do not be afraid.", "reference": "John 14:27" },
+
+  // ---------- LONELY (15 verses) ----------
+  { "mood": "lonely", "verse": "And surely I am with you always, to the very end of the age.", "reference": "Matthew 28:20" },
+  { "mood": "lonely", "verse": "The Lord himself goes before you and will be with you; he will never leave you nor forsake you.", "reference": "Deuteronomy 31:8" },
+  { "mood": "lonely", "verse": "God sets the lonely in families, he leads out the prisoners with singing.", "reference": "Psalm 68:6" },
+  { "mood": "lonely", "verse": "Turn to me and be gracious to me, for I am lonely and afflicted.", "reference": "Psalm 25:16" },
+  { "mood": "lonely", "verse": "Even if my father and mother abandon me, the Lord will hold me close.", "reference": "Psalm 27:10" },
+  { "mood": "lonely", "verse": "Can a mother forget the baby at her breast? Though she may forget, I will not forget you!", "reference": "Isaiah 49:15" },
+  { "mood": "lonely", "verse": "I will not leave you as orphans; I will come to you.", "reference": "John 14:18" },
+  { "mood": "lonely", "verse": "For the Lord loves justice, and he will never abandon the godly.", "reference": "Psalm 37:28" },
+  { "mood": "lonely", "verse": "Draw near to God, and he will draw near to you.", "reference": "James 4:8" },
+  { "mood": "lonely", "verse": "Fear not, for I have redeemed you; I have called you by name, you are mine.", "reference": "Isaiah 43:1" },
+  { "mood": "lonely", "verse": "For I am convinced that neither death nor life, neither angels nor demons... will be able to separate us from the love of God.", "reference": "Romans 8:38-39" },
+  { "mood": "lonely", "verse": "The Lord your God is in your midst, a mighty one who will save; he will rejoice over you with gladness.", "reference": "Zephaniah 3:17" },
+  { "mood": "lonely", "verse": "Never will I leave you; never will I forsake you.", "reference": "Hebrews 13:5" },
+  { "mood": "lonely", "verse": "You are the God who sees me.", "reference": "Genesis 16:13" },
+  { "mood": "lonely", "verse": "He tends his flock like a shepherd; he gathers the lambs in his arms.", "reference": "Isaiah 40:11" },
+
+  // ---------- NEED STRENGTH (15 verses) ----------
+  { "mood": "strength", "verse": "I can do all this through him who gives me strength.", "reference": "Philippians 4:13" },
+  { "mood": "strength", "verse": "He gives strength to the weary and increases the power of the weak.", "reference": "Isaiah 40:29" },
+  { "mood": "strength", "verse": "But those who hope in the Lord will renew their strength. They will soar on wings like eagles.", "reference": "Isaiah 40:31" },
+  { "mood": "strength", "verse": "The Lord is my strength and my shield; my heart trusts in him, and he helps me.", "reference": "Psalm 28:7" },
+  { "mood": "strength", "verse": "My grace is sufficient for you, for my power is made perfect in weakness.", "reference": "2 Corinthians 12:9" },
+  { "mood": "strength", "verse": "The Lord is my strength and my song; he has given me victory.", "reference": "Exodus 15:2" },
+  { "mood": "strength", "verse": "Finally, be strong in the Lord and in his mighty power.", "reference": "Ephesians 6:10" },
+  { "mood": "strength", "verse": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand.", "reference": "Isaiah 41:10" },
+  { "mood": "strength", "verse": "For the joy of the Lord is your strength.", "reference": "Nehemiah 8:10" },
+  { "mood": "strength", "verse": "God is our refuge and strength, an ever-present help in trouble.", "reference": "Psalm 46:1" },
+  { "mood": "strength", "verse": "Be strong and courageous. Do not be afraid or terrified because of them, for the Lord your God goes with you.", "reference": "Deuteronomy 31:6" },
+  { "mood": "strength", "verse": "It is God who arms me with strength and keeps my way secure.", "reference": "Psalm 18:32" },
+  { "mood": "strength", "verse": "The Sovereign Lord is my strength; he makes my feet like the feet of a deer.", "reference": "Habakkuk 3:19" },
+  { "mood": "strength", "verse": "Through God we will gain the victory, and he will trample down our enemies.", "reference": "Psalm 60:12" },
+  { "mood": "strength", "verse": "But the Lord stood at my side and gave me strength.", "reference": "2 Timothy 4:17" },
+
+  // ---------- NEED PEACE (15 verses) ----------
+  { "mood": "peace", "verse": "You will keep in perfect peace those whose minds are steadfast, because they trust in you.", "reference": "Isaiah 26:3" },
+  { "mood": "peace", "verse": "Peace I leave with you; my peace I give you. I do not give to you as the world gives.", "reference": "John 14:27" },
+  { "mood": "peace", "verse": "And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.", "reference": "Philippians 4:7" },
+  { "mood": "peace", "verse": "The Lord bless you and keep you; the Lord make his face shine on you and be gracious to you; the Lord turn his face toward you and give you peace.", "reference": "Numbers 6:24-26" },
+  { "mood": "peace", "verse": "Come to me, all you who are weary and burdened, and I will give you rest.", "reference": "Matthew 11:28" },
+  { "mood": "peace", "verse": "He makes me lie down in green pastures, he leads me beside quiet waters, he refreshes my soul.", "reference": "Psalm 23:2-3" },
+  { "mood": "peace", "verse": "I will lie down and sleep in peace, for you alone, Lord, make me dwell in safety.", "reference": "Psalm 4:8" },
+  { "mood": "peace", "verse": "Let the peace of Christ rule in your hearts, since as members of one body you were called to peace.", "reference": "Colossians 3:15" },
+  { "mood": "peace", "verse": "Be still, and know that I am God.", "reference": "Psalm 46:10" },
+  { "mood": "peace", "verse": "Now may the Lord of peace himself give you peace at all times and in every way.", "reference": "2 Thessalonians 3:16" },
+  { "mood": "peace", "verse": "Great peace have those who love your law, and nothing can make them stumble.", "reference": "Psalm 119:165" },
+  { "mood": "peace", "verse": "May God himself, the God of peace, sanctify you through and through.", "reference": "1 Thessalonians 5:23" },
+  { "mood": "peace", "verse": "When you lie down, you will not be afraid; when you lie down, your sleep will be sweet.", "reference": "Proverbs 3:24" },
+  { "mood": "peace", "verse": "For he himself is our peace.", "reference": "Ephesians 2:14" },
+  { "mood": "peace", "verse": "Those who look to him are radiant; their faces are never covered with shame.", "reference": "Psalm 34:5" },
+
+  // ---------- THANKFUL (15 verses) ----------
+  { "mood": "thankful", "verse": "Give thanks to the Lord, for he is good; his love endures forever.", "reference": "Psalm 107:1" },
+  { "mood": "thankful", "verse": "Rejoice always, pray continually, give thanks in all circumstances; for this is God's will for you in Christ Jesus.", "reference": "1 Thessalonians 5:16-18" },
+  { "mood": "thankful", "verse": "Enter his gates with thanksgiving and his courts with praise; give thanks to him and praise his name.", "reference": "Psalm 100:4" },
+  { "mood": "thankful", "verse": "Every good and perfect gift is from above, coming down from the Father of the heavenly lights.", "reference": "James 1:17" },
+  { "mood": "thankful", "verse": "Give thanks to the Lord, for he is good. His love endures forever.", "reference": "Psalm 136:1" },
+  { "mood": "thankful", "verse": "And whatever you do, whether in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through him.", "reference": "Colossians 3:17" },
+  { "mood": "thankful", "verse": "Praise the Lord, my soul, and forget not all his benefits.", "reference": "Psalm 103:2" },
+  { "mood": "thankful", "verse": "I will give thanks to you, Lord, with all my heart; I will tell of all your wonderful deeds.", "reference": "Psalm 9:1" },
+  { "mood": "thankful", "verse": "Thanks be to God for his indescribable gift!", "reference": "2 Corinthians 9:15" },
+  { "mood": "thankful", "verse": "Let everything that has breath praise the Lord. Praise the Lord.", "reference": "Psalm 150:6" },
+  { "mood": "thankful", "verse": "I thank Christ Jesus our Lord, who has given me strength, that he considered me trustworthy.", "reference": "1 Timothy 1:12" },
+  { "mood": "thankful", "verse": "Give praise to the Lord, proclaim his name; make known among the nations what he has done.", "reference": "Psalm 105:1" },
+  { "mood": "thankful", "verse": "This is the day the Lord has made; let us rejoice and be glad in it.", "reference": "Psalm 118:24" },
+  { "mood": "thankful", "verse": "Praise the Lord. Give thanks to the Lord, for he is good; his love endures forever.", "reference": "Psalm 106:1" },
+  { "mood": "thankful", "verse": "For the Lord is good and his love endures forever; his faithfulness continues through all generations.", "reference": "Psalm 100:5" }
+]
