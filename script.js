@@ -22,12 +22,12 @@ let isRandom       = false; // true when the Random button was used
 // Mood display names (maps data-mood values → readable label)
 // ✏️  Add a new entry here if you add a new mood category.
 const MOOD_LABELS = {
-  sad:       '🕊 Sad',
+  sad:       '🥺 Sad',
   anxious:   '🌿 Anxious / Worried',
   fear:      '🛡 Afraid',
   lonely:    '🤍 Lonely',
   strength:  '⚡ Need Strength',
-  peace:     '☁️ Need Peace',
+  peace:     '🕊️ Need Peace',
   thankful:  '🙏 Thankful',
   random:    '✦ Random Verse',
 };
