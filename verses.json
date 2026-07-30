@@ -26,7 +26,74 @@
   { "mood": "sad", "verse": "For I am the Lord your God who takes hold of your right hand and says to you, Do not fear; I will help you.", "reference": "Isaiah 41:13" },
   { "mood": "sad", "verse": "Jesus wept.", "reference": "John 11:35" },
   { "mood": "sad", "verse": "The Lord your God is with you, the Mighty Warrior who saves. He will take great delight in you.", "reference": "Zephaniah 3:17" },
+  {"mood": "sad","verse": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand.",
+    "reference": "Isaiah 41:10"
+  },
+  {
+    "mood": "sad",
+    "verse": "Peace I leave with you; my peace I give you. I do not give to you as the world gives. Do not let your hearts be troubled and do not be afraid.",
+    "reference": "John 14:27"
+  },
+  {"mood": "sad","verse": "Even though I walk through the darkest valley, I will fear no evil, for you are with me; your rod and your staff, they comfort me.",
+    "reference": "Psalm 23:4"},
+  {"mood": "sad","verse": "My flesh and my heart may fail, but God is the strength of my heart and my portion forever.","reference": "Psalm 73:26"  },
+  {
+    "mood": "sad",
+    "verse": "May the God of hope fill you with all joy and peace as you trust in him, so that you may overflow with hope by the power of the Holy Spirit.",
+    "reference": "Romans 15:13"
+  },
+  {
+    "mood": "sad",
+    "verse": "I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world.",
+    "reference": "John 16:33"
+  },
+  {
+    "mood": "sad",
+    "verse": "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.",
+    "reference": "Jeremiah 29:11"
+  },
+  {
+    "mood": "sad",
+    "verse": "The Lord gives sight to the blind, the Lord lifts up those who are bowed down, the Lord loves the righteous.",
+    "reference": "Psalm 146:8"
+  },
+  {
+    "mood": "sad",
+    "verse": "And the God of all grace, who called you to his eternal glory in Christ, after you have suffered a little while, will himself restore you and make you strong, firm and steadfast.",
+    "reference": "1 Peter 5:10"
+  },
+  {
+    "mood": "sad",
+    "verse": "But those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint.",
+    "reference": "Isaiah 40:31"
+  },
+  {
+    "mood": "sad",
+    "verse": "Whoever dwells in the shelter of the Most High will rest in the shadow of the Almighty. I will say of the Lord, 'He is my refuge and my fortress, my God, in whom I trust.'",
+    "reference": "Psalm 91:1-2"
+  },
+  {
+    "mood": "sad",
+    "verse": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.",
+    "reference": "Romans 8:28"
+  },
+  {
+    "mood": "sad",
+    "verse": "Anxiety weighs down the heart, but a kind word cheers it up.",
+    "reference": "Proverbs 12:25"
+  },
+  {
+    "mood": "sad",
+    "verse": "Rejoice with those who rejoice; mourn with those who mourn.",
+    "reference": "Romans 12:15"
+  },
+  {
+    "mood": "sad",
+    "verse": "The Lord is my light and my salvation—whom shall I fear? The Lord is the stronghold of my life—of whom shall I be afraid?",
+    "reference": "Psalm 27:1"
+  }
 
+  
   // ---------- ANXIOUS / WORRIED (15 verses) ----------
   { "mood": "anxious", "verse": "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.", "reference": "Philippians 4:6" },
   { "mood": "anxious", "verse": "Cast all your anxiety on him because he cares for you.", "reference": "1 Peter 5:7" },
@@ -43,7 +110,81 @@
   { "mood": "anxious", "verse": "Which of you by being worried can add a single hour to his life?", "reference": "Matthew 6:27" },
   { "mood": "anxious", "verse": "I sought the Lord, and he answered me; he delivered me from all my fears.", "reference": "Psalm 34:4" },
   { "mood": "anxious", "verse": "For God has not given us a spirit of fear and timidity, but of power, love, and self-discipline.", "reference": "2 Timothy 1:7" },
-
+  {
+    "mood": "anxious",
+    "verse": "Say to those with fearful hearts, 'Be strong, do not fear; your God will come, he will come with vengeance; with divine retribution he will come to save you.'",
+    "reference": "Isaiah 35:4"
+  },
+  {
+    "mood": "anxious",
+    "verse": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.",
+    "reference": "Joshua 1:9"
+  },
+  {
+    "mood": "anxious",
+    "verse": "When I am afraid, I put my trust in you.",
+    "reference": "Psalm 56:3"
+  },
+  {
+    "mood": "anxious",
+    "verse": "God is our refuge and strength, an ever-present help in trouble.",
+    "reference": "Psalm 46:1"
+  },
+  {
+    "mood": "anxious",
+    "verse": "Who of you by worrying can add a single hour to your life? Since you cannot do this very little thing, why do you worry about the rest?",
+    "reference": "Luke 12:25-26"
+  },
+  {
+    "mood": "anxious",
+    "verse": "The Lord is with me; I will not be afraid. What can mere mortals do to me?",
+    "reference": "Psalm 118:6"
+  },
+  {
+    "mood": "anxious",
+    "verse": "So we say with confidence, 'The Lord is my helper; I will not be afraid. What can mere mortals do to me?'",
+    "reference": "Hebrews 13:6"
+  },
+  {
+    "mood": "anxious",
+    "verse": "Let the peace of Christ rule in your hearts, since as members of one body you were called to peace. And be thankful.",
+    "reference": "Colossians 3:15"
+  },
+  {
+    "mood": "anxious",
+    "verse": "Now may the Lord of peace himself give you peace at all times and in every way. The Lord be with all of you.",
+    "reference": "2 Thessalonians 3:16"
+  },
+  {
+    "mood": "anxious",
+    "verse": "I lift up my eyes to the mountains—where does my help come from? My help comes from the Lord, the Maker of heaven and earth.",
+    "reference": "Psalm 121:1-2"
+  },
+  {
+    "mood": "anxious",
+    "verse": "You will keep in perfect peace those whose minds are steadfast, because they trust in you.",
+    "reference": "Isaiah 26:3"
+  },
+  {
+    "mood": "anxious",
+    "verse": "He got up, rebuked the wind and said to the waves, 'Quiet! Be still!' Then the wind died down and it was completely calm.",
+    "reference": "Mark 4:39"
+  },
+  {
+    "mood": "anxious",
+    "verse": "What, then, shall we say in response to these things? If God is for us, who can be against us?",
+    "reference": "Romans 8:31"
+  },
+  {
+    "mood": "anxious",
+    "verse": "Search me, God, and know my heart; test me and know my anxious thoughts.",
+    "reference": "Psalm 139:23"
+  },
+  {
+    "mood": "anxious",
+    "verse": "There is no fear in love. But perfect love drives out fear, because fear has to do with punishment. The one who fears is not made perfect in love.",
+    "reference": "1 John 4:18"
+  }
   // ---------- AFRAID (15 verses) ----------
   { "mood": "fear", "verse": "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.", "reference": "Joshua 1:9" },
   { "mood": "fear", "verse": "The Lord is my light and my salvation — whom shall I fear? The Lord is the stronghold of my life — of whom shall I be afraid?", "reference": "Psalm 27:1" },
@@ -60,7 +201,106 @@
   { "mood": "fear", "verse": "Say to those with fearful hearts, 'Be strong, do not fear; your God will come.'", "reference": "Isaiah 35:4" },
   { "mood": "fear", "verse": "Do not be afraid of them, for I am with you and will rescue you, declares the Lord.", "reference": "Jeremiah 1:8" },
   { "mood": "fear", "verse": "Peace I leave with you; my peace I give you. Do not let your hearts be troubled and do not be afraid.", "reference": "John 14:27" },
-
+  {
+    "mood": "fear",
+    "verse": "Be strong and courageous. Do not be afraid or terrified because of them, for the Lord your God goes with you; he will never leave you nor forsake you.",
+    "reference": "Deuteronomy 31:6"
+  },
+  {
+    "mood": "fear",
+    "verse": "I sought the Lord, and he answered me; he delivered me from all my fears.",
+    "reference": "Psalm 34:4"
+  },
+  {
+    "mood": "fear",
+    "verse": "Fear of man will prove to be a snare, but whoever trusts in the Lord is kept safe.",
+    "reference": "Proverbs 29:25"
+  },
+  {
+    "mood": "fear",
+    "verse": "They will have no fear of bad news; their hearts are steadfast, trusting in the Lord.",
+    "reference": "Psalm 112:7"
+  },
+  {
+    "mood": "fear",
+    "verse": "But now, this is what the Lord says—he who created you, Jacob, he who formed you, Israel: 'Do not fear, for I have redeemed you; I have summoned you by name; you are mine.'",
+    "reference": "Isaiah 43:1"
+  },
+  {
+    "mood": "fear",
+    "verse": "Do not be afraid of them; the Lord your God himself will fight for you.",
+    "reference": "Deuteronomy 3:22"
+  },
+  {
+    "mood": "fear",
+    "verse": "When you lie down, you will not be afraid; when you lie down, your sleep will be sweet.",
+    "reference": "Proverbs 3:24"
+  },
+  {
+    "mood": "fear",
+    "verse": "Do not be afraid of those who kill the body but cannot kill the soul. Rather, be afraid of the One who can destroy both soul and body in hell.",
+    "reference": "Matthew 10:28"
+  },
+  {
+    "mood": "fear",
+    "verse": "Overhearing what they said, Jesus told him, 'Don't be afraid; just believe.'",
+    "reference": "Mark 5:36"
+  },
+  {
+    "mood": "fear",
+    "verse": "Do not be afraid, little flock, for your Father has been pleased to give you the kingdom.",
+    "reference": "Luke 12:32"
+  },
+  {
+    "mood": "fear",
+    "verse": "When I saw him, I fell at his feet as though dead. Then he placed his right hand on me and said: 'Do not be afraid. I am the First and the Last.'",
+    "reference": "Revelation 1:17"
+  },
+  {
+    "mood": "fear",
+    "verse": "But even if you should suffer for what is right, you are blessed. 'Do not fear their threats; do not be frightened.'",
+    "reference": "1 Peter 3:14"
+  },
+  {
+    "mood": "fear",
+    "verse": "On that day they will say to Jerusalem, 'Do not fear, Zion; do not let your hands hang limp. The Lord your God is with you, the Mighty Warrior who saves.'",
+    "reference": "Zephaniah 3:16-17"
+  },
+  {
+    "mood": "fear",
+    "verse": "So don't be afraid; you are worth more than many sparrows.",
+    "reference": "Matthew 10:31"
+  },
+  {
+    "mood": "fear",
+    "verse": "You will not fear the terror of night, nor the arrow that flies by day.",
+    "reference": "Psalm 91:5"
+  },
+  {
+    "mood": "fear",
+    "verse": "Hearing this, Jesus said to Jairus, 'Don't be afraid; just believe, and she will be healed.'",
+    "reference": "Luke 8:50"
+  },
+  {
+    "mood": "fear",
+    "verse": "This is what I covenanted with you when you came out of Egypt. And my Spirit remains among you. Do not fear.",
+    "reference": "Haggai 2:5"
+  },
+  {
+    "mood": "fear",
+    "verse": "Though an army besiege me, my heart will not fear; though war break out against me, even then I will be confident.",
+    "reference": "Psalm 27:3"
+  },
+  {
+    "mood": "fear",
+    "verse": "Do not be afraid, Abram. I am your shield, your very great reward.",
+    "reference": "Genesis 15:1"
+  },
+  {
+    "mood": "fear",
+    "verse": "For God has not given us a spirit of fear and timidity, but of power, love, and self-discipline.",
+    "reference": "2 Timothy 1:7"
+  }
   // ---------- LONELY (15 verses) ----------
   { "mood": "lonely", "verse": "And surely I am with you always, to the very end of the age.", "reference": "Matthew 28:20" },
   { "mood": "lonely", "verse": "The Lord himself goes before you and will be with you; he will never leave you nor forsake you.", "reference": "Deuteronomy 31:8" },
